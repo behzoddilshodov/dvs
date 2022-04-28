@@ -1,0 +1,86 @@
+.intro__wrapper {
+  background-image: url(/img/backgimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 243px;
+}
+
+.intro__content {
+  background-color: #FAFAFA;
+  margin-left: -20px;
+  max-width: 458px;
+  padding-top: 56px;
+  margin-top: 340px;
+  
+}
+.intro__heading {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.446429px;
+  color: #33323D;
+  margin: 0;
+  padding: 0;
+  max-width: 445px;
+  margin-bottom: 53px;
+}
+
+.intro__link-wrapper {
+  display: flex;
+}
+.intro__line {
+  background-color: #000000;
+  padding: 18px 16px;
+}
+.intro__link {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color:  #203A4C;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 38px;
+  padding-right: 39px;
+  text-decoration: none;
+}
+
+@include breakpoint-down(798px){
+  .intro__heading{
+   
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 458px;
+  }
+
+  .intro__wrapper{
+    background-image: url(/img/tabletback.jpg);
+    background-size: cover;
+  }
+
+  .intro__content{
+    max-width: 514px;
+    margin-top: 100px;
+  }
+
+  @include breakpoint-down(500px){
+  .intro__wrapper{
+    background-image: url(/img/introphone.jpg);
+    background-size: cover;
+  
+}
+}
+  .intro__content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
